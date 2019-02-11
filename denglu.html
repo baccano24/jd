@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <style>
+        body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+        ul,li,ol{list-style:none;}
+        img,fieldset{border:0; }
+        img{display:block;}
+        a{text-decoration:none; color:#333;}
+        h1,h2,h3,h4,h5,h6{font-weight:100;}
+        body{ font-family:"微软雅黑";}
+        input,a{outline:none;}
+
+        header,section,footer{
+            width: 900px;
+            margin: 0 auto;
+        }
+        header{
+            height: 80px;
+            box-sizing: border-box;
+        }
+        header .denglu_logo{
+            margin-top: 10px;
+            display: block;
+            float: left;
+        }
+        header span{
+            display: block;
+            float: left;
+            font-size: 24px;
+            color: #3B3B3B;
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+        .dcwj{
+            float: right;
+            color: #999;
+            font-size: 12px;
+            width: 135px;
+            box-sizing: border-box;
+            margin-top: 55px;
+        }
+        .dcwj img{
+            float: left;
+        }
+        .dcwj a{
+            float: left;
+            color: #999;
+            font-size: 12px;
+            margin-left: 3px;
+        }
+        p{
+            text-align: center;
+            background: #FFF8F0;
+            width: 100%;
+            color: #999999;
+            font: 12px/40px "微软雅黑";
+        }
+        p a{
+            color: #000;
+        }
+        section{
+            background: url(img/denglu_banner.png) 100% center;
+            height: 475px;
+            box-sizing: border-box;
+        }
+        .section_wrap{
+            background: #E93854;
+        }
+        section .register{
+            background: #fff;
+            width: 348px;
+            height: 402px;
+            float: right;
+            margin-top: 10px;
+        }
+        section .qiehuan{
+            width: 100%;
+            height: 55px;
+            border-top: 1px solid #F4F4F4;
+            border-bottom: 1px solid #F4F4F4;
+        }
+        .qiehuan li{
+            float: left;
+            width: 50%;
+            text-align: center;
+        }
+        .qiehuan li a{
+            font: 17px/55px "微软雅黑";
+            color: #666666;
+            text-align: center;
+        }
+        .qiehuan li .zhanghu{
+            font-weight: 900;
+            color: #E4393C;
+        }
+        section input{
+            display: block;
+            width: 304px;
+            height: 38px;
+            border: 1px solid #666;
+            margin: 20px auto;
+            color: #999;
+            text-indent: 17px;
+        }
+        #cont{
+            display: block;
+            width: 304px;
+            height: 20px;  
+            margin: 5px auto;
+            border: 1px solid #E93854;
+            background:  #FFF8F0;
+            color: #999;
+            line-height: 20px;
+            font-size: 10px;
+        }
+        .wjmm{
+            font-size: 13px;
+            color: #3B3B3B;
+            display: block;
+            float: right;
+            margin-bottom: 22px;
+            margin-right: 22px;
+            
+        }
+        #save{
+            display: block;
+            float: left;
+            margin-left: 22px;
+            width: 13px;
+            height: 13px;
+            margin-top: 3px;
+        }
+        section i{
+            display: block;
+            float: left;
+            font-size: 13px;
+            color: #3B3B3B;
+            font-style: normal;
+            margin-left: 10px;
+        }
+        section button{
+            display: block;
+            background: #E93854;
+            color: #fff;
+            border: 1px solid #E4393C;
+            font: 19px/34px "微软雅黑";
+            text-align: center;
+            width: 304px;
+            height: 34px;
+            margin: 0 auto;
+            cursor: pointer;
+            line-height: 34px;
+        }
+        footer{
+            height: 80px;
+            box-sizing: border-box;
+        }
+        footer ul{
+            width: 780px;
+            height: 12px;
+            margin: 0 auto;
+            margin-top:23px;
+        }
+        footer ul li{
+            float: left;
+        }
+        footer li a{
+            color: #666;
+            font-size: 12px;
+        }
+        footer span{
+            margin: 0 10px;
+            color: #666;
+            font-size: 8px;
+        }
+        footer p{
+            color: #999;
+            font-size: 10px;
+            text-align: center;
+            height: 40px;
+            margin-top: 20px;
+            line-height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a class="denglu_logo" href=""><img src="img/logo-201305-b.png" alt=""></a>
+        <span>欢迎登录</span>
+        <span class="dcwj"><img src="img/cookingFailure_0.obj.png" alt=""><a href="">登录页面，调查问卷</a></span>
+    </header>
+    <p>依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！ 新版<a href="">《京东隐私政策》</a>已上线，将更有利于保护您的个人隐私。</p>
+    <div class="section_wrap">
+            <section>
+                <div class="register">
+                    <p>京东不会以任何理由要求您转账汇款，谨防诈骗</p>
+                    <ul class="qiehuan">
+                        <li><a href="">扫码登录</a></li>
+                        <li><a class="zhanghu" href="">账户登录</a></li>
+                    </ul>
+                    <span id="cont" style="display:none">账户名与密码不匹配，请重新输入</span>
+                    <input type="text" id="txt" placeholder="邮箱/用户名/已验证手机">
+                    <input type="text" id="pwd" placeholder="密码">
+                    <input type="radio" id="save"><i>七天免登陆</i>
+                    <a class="wjmm" href="">忘记密码</a>
+                    <button id="btn">登  录</button>
+                </div>
+            </section>
+    </div>
+    <footer>
+        <ul>
+            <li><a href="">关于我们</a><span>|</span></li>
+            <li><a href="">联系我们</a><span>|</span></li>
+            <li><a href="">人才招聘</a><span>|</span></li>
+            <li><a href="">商家入驻</a><span>|</span></li>
+            <li><a href="">广告服务</a><span>|</span></li>
+            <li><a href="">手机京东</a><span>|</span></li>
+            <li><a href="">友情链接</a><span>|</span></li>
+            <li><a href="">销售联盟</a><span>|</span></li>
+            <li><a href="">京东社区</a><span>|</span></li>
+            <li><a href="">京东公益</a><span>|</span></li>
+            <li><a href="">English Site</a></li>
+        </ul>
+        <p>Copyright © 2004-2019  京东JD.com 版权所有</p>
+        <script src="js/denglu.js"></script>
+    </footer>
+</body>
+</html>
